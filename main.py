@@ -17,7 +17,7 @@ UserAge = int(input("Enter your age:\n"))
 print("Your age is: " + str(UserAge))
 
 #Ask user if they would like to call ipwhois API for IP data
-IPQuery = input('Would you like to see information about your external IP Address?\n')
+IPQuery = input('Would you like to see some information about your external IP Address?\n')
 if IPQuery == 'y' or 'Y' or 'yes' or 'Yes' or 'YES' or '1':
     RestAPI.ipdata()
     print('\nGoodbye!')
