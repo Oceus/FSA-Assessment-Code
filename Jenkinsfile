@@ -1,6 +1,6 @@
 pipeline {
 environment {
-registry = "oceus/eacode"
+registry = "oceus/eacode:initial"
 registryCredential = 'dockerhub_id'
 dockerImage = ''
 }
