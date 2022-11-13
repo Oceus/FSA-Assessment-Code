@@ -18,7 +18,7 @@ pipeline {
     }
     stage('Docker login') {
       steps{
-        sh 'sudo docker login -u oceus -p H?XWy#R_LJ:q6;d'
+        sh 'sudo docker login -u "oceus" -p "H?XWy#R_LJ:q6;d"'
       } 
     }
     stage('Deploy image') {
