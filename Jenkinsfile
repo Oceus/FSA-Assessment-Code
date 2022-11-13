@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Building image') {
       steps{
-        sh 'docker build -t oceus/eacode:initial .'
+        sh 'sudo docker build -t oceus/eacode:initial .'
       }
     }
     stage('Deploy image') {
@@ -27,7 +27,7 @@ pipeline {
     }
     stage('Cleaning up') {
       steps{
-        sh "docker rmi $registry:$BUILD_NUMBER"
+        sh "sudo docker rmi $registry:$BUILD_NUMBER"
       }
     }
   }
